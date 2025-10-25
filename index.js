@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const { OpenAI } = require('openai');
+const { OpenAI } = require('openai/index.js');
 
 dotenv.config();
 
@@ -45,7 +45,7 @@ app.post('/api/chat', async (req, res) => {
 
   try {
     const completion = await openai.chat.completions.create({
-      model: 'gpt-5-nano', 
+      model: 'gpt-4o-mini', 
       messages: [{ role: 'user', content: message }],
     });
 

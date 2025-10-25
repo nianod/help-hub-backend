@@ -41,12 +41,11 @@ cd help-hub-ai-backend
 npm install
 
 ## Create a .env file in the root directory with your credentials
-PORT=
-8000
+PORT=8000
 OPENAI_API_KEY=your_openai_key
 
 ## Start the server
-npm run de
+npm run dev
 
 
 ```
